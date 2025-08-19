@@ -1,0 +1,62 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfileRowView">
+        <attr name="icon" format="reference" />
+        <attr name="bgColor" format="color" />
+        <attr name="headings" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SubscriptionView">
+        <attr name="subscriptionTitle" format="string" />
+        <attr name="subscriptionSubTitle" format="string" />
+        <attr name="chcked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AppEditText">
+        <attr name="android:hint" />
+        <attr name="android:title" />
+        <attr name="android:inputType" />
+        <attr name="android:text" />
+        <attr name="errorMsg" format="string" />
+
+
+    </declare-styleable>
+
+    <declare-styleable name="AppSpinnerEditText">
+        <attr name="android:hint" />
+        <attr name="android:title" />
+        <attr name="android:inputType" />
+        <attr name="android:text" />
+        <attr name="errorMg" format="string" />
+        <attr name="entries" />
+        <attr name="selectedItem" format="string" />
+
+
+    </declare-styleable>
+
+
+    <declare-styleable name="AppRadioButton">
+        <attr name="firstText" format="string" />
+        <attr name="secondText" format="string" />
+        <attr name="errorText" format="string" />
+        <attr name="android:title" />
+
+    </declare-styleable>
+
+    <declare-styleable name="VitaminDatePicker">
+        <attr name="android:hint" />
+        <attr name="android:text" />
+    </declare-styleable>
+
+    <!--    <declare-styleable name="AppSpinner">-->
+    <!--        <attr name="entries" />-->
+    <!--        <attr name="hint" format="string" />-->
+    <!--        <attr name="selectedItem" format="string" />-->
+    <!--    </declare-styleable>-->
+
+
+</resources>

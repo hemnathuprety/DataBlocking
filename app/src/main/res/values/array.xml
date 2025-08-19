@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_volume_unit">
+        <item>  Unit  </item>
+        <item>GB   </item>
+        <item>MB   </item>
+    </string-array>
+
+    <string-array name="array_time_unit">
+        <item>  Unit  </item>
+        <item>Min </item>
+        <item>Hours</item>
+        <item>Days </item>
+        <item>Months</item>
+    </string-array>
+
+
+</resources>

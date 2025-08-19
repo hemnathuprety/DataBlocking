@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary25">#F4FBF7</color>
+    <color name="colorPrimary50">#E9F7EF</color>
+    <color name="colorPrimary100">#D3EFDF</color>
+    <color name="colorPrimary200">#7CCFC0</color>
+    <color name="colorPrimary300">#7CCFA0</color>
+    <color name="colorPrimary400">#51BF80</color>
+    <color name="colorPrimary500">#26AF61</color>
+
+    <color name="colorSecondary25">#f4f7fb</color>
+    <color name="colorSecondary50">#e9f0f7</color>
+    <color name="colorSecondary100">#d3e1ef</color>
+    <color name="colorSecondary200">#a8c4df</color>
+    <color name="colorSecondary300">#7ca6cf</color>
+    <color name="colorSecondary400">#5188bf</color>
+    <color name="colorSecondary500">#266baf</color>
+
+    <color name="colorAccent25">#fef9f3</color>
+    <color name="colorAccent50">#fdf3ef</color>
+    <color name="colorAccent100">#fae8d0</color>
+    <color name="colorAccent200">#f5d1a2</color>
+    <color name="colorAccent300">#efba73</color>
+    <color name="colorAccent400">#eaa345</color>
+    <color name="colorAccent500">#e58c17</color>
+
+    <color name="colorSurface25">#F4F4F4</color>
+    <color name="colorSurface50">#EAEAEA</color>
+    <color name="colorSurface100">#D6D6D6</color>
+    <color name="colorSurface200">#ADADAD</color>
+    <color name="colorSurface300">#848484</color>
+    <color name="colorSurface400">#5B5B5B</color>
+    <color name="colorSurface500">#333333</color>
+
+    <color name="colorError">#F04034</color>
+    <!--    <color name="colorAllow">#D6d6d6</color>-->
+    <color name="colorAllow">@color/colorWhite</color>
+    <color name="snackBG">@color/colorPrimary500</color>
+
+
+</resources>

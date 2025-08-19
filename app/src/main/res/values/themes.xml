@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.CoreTheme.DayNight"></style>
+
+    <style name="Theme.CoreTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="switchStyle">@style/AppSwitchStyle</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.CoreTheme">
+        <item name="android:windowBackground">@color/colorPrimary500</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary500</item>
+        <item name="android:statusBarColor">@color/colorPrimary500</item>
+    </style>
+
+    <style name="AuthTheme" parent="Theme.CoreTheme">
+        <item name="colorPrimary">@color/colorPrimary500</item>
+        <item name="android:colorPrimary">@color/colorPrimary500</item>
+        <item name="colorPrimaryDark">@color/colorBackground</item>
+        <item name="android:colorPrimaryDark">@color/colorBackground</item>
+
+        <!--        <item name="android:statusBarColor">@color/colorBackground</item>-->
+        <item name="materialButtonStyle">@style/AppButtonStyle</item>
+        <item name="textInputStyle">
+            @style/AppTextInputStyle
+        </item>
+
+    </style>
+
+    <style name="AddDataPlanTheme" parent="AuthTheme">
+        <item name="textInputStyle">
+            @style/DataPlanTextInputStyle
+        </item>
+
+    </style>
+
+
+    <style name="Theme.CoreTheme.DayNight">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <item name="colorSecondary">@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/colorText</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="Theme.Imali_launcher" parent="android:Theme.Material.Light.NoActionBar" />
+
+
+</resources>

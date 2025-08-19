@@ -1,0 +1,152 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    ext {
+        kotlin_version = '1.9.0'
+        multidex_version = "2.0.1"
+        //
+        compose_version = '1.1.1'
+        compose_ui_version = '1.1.1'
+        compose_nav_version = '2.5.3'
+
+
+        //kotlinx
+        core_ktx = "1.7.0"
+        coroutine_core = "1.5.1"
+        coroutine_android = "1.5.2"
+        coroutine_play = "1.3.9"
+
+        //firebase
+        firebase_bom = '32.2.2'
+        firestore_ktx = '24.7.0'
+        firebase_auth = '22.1.1'
+
+        //google services
+        play_services_auth = '20.6.0'
+        google_services = '4.3.15'
+
+        //room
+        room_db = '2.5.2'
+
+        //fab lib
+        clans_fab = "1.6.4"
+
+
+        app_compat = '1.6.1'
+        material = '1.9.0'
+        constraintLayout = "2.1.4"
+
+
+        //QR CODE SCANNING
+        camerax_version = "1.0.1"
+        camera_view = "1.0.0-alpha28"
+        mlkit_barcode_scanning = '17.2.0'
+
+        //QR code generator alternative
+        zxing = "4.3.0"
+
+        //Rx
+        rxPermission = "0.10.2"
+        rxJava = '3.1.6'
+        rxAndroid = "2.1.1"
+
+        //ViewPager
+        circleIndicator = "2.1.6"
+
+        //desugaring lib
+        jdk_desugar = "1.1.5"
+        junit = "4.13.2"
+
+        //test
+        screengrab = "2.1.1"
+
+        appDependency = [
+
+
+                app_compat                : "androidx.appcompat:appcompat:$app_compat",
+                material                  : "com.google.android.material:material:$material",
+                constraint_layout         : "androidx.constraintlayout:constraintlayout:$constraintLayout",
+//coroutine
+                core_ktx                  : "androidx.core:core-ktx:$core_ktx",
+                coroutines_core           : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_core",
+                coroutines_android        : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_android",
+                coroutines_play_services  : "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:$coroutine_play",
+//room db
+                room_ktx                  : "androidx.room:room-ktx:$room_db",
+                room_kapt                 : "androidx.room:room-compiler:$room_db",
+                room_runtime              : "androidx.room:room-runtime:$room_db",
+
+                //compose
+                "compose_activity"        : "androidx.activity:activity-compose:1.3.1",
+                "compose_ui"              : "androidx.compose.ui:ui:$compose_ui_version",
+                "tooling_preview"         : "androidx.compose.ui:ui-tooling-preview:$compose_ui_version",
+                "compose_material"        : "androidx.compose.material:material:1.1.1",
+//compose test
+                "compose_ui_test_junit4"  : "androidx.compose.ui:ui-test-junit4:$compose_ui_version",
+                // compose debuging tools
+                "compose_ui_tooling"      : "androidx.compose.ui:ui-tooling:$compose_ui_version",
+                "compose_ui_test_manifest": "androidx.compose.ui:ui-test-manifest:$compose_ui_version",
+//firebase
+                firebase_bom            : "com.google.firebase:firebase-bom:$firebase_bom",
+                firebase_analytics      : "com.google.firebase:firebase-analytics-ktx",
+                firebase_firestore      : "com.google.firebase:firebase-firestore-ktx:$firestore_ktx",
+                firebase_auth_ktx       : "com.google.firebase:firebase-auth-ktx:$firebase_auth",
+                firebase_auth           : "com.google.firebase:firebase-auth-ktx:$firebase_auth",
+                //compose
+                compose_viewbinding       : "androidx.compose.ui:ui-viewbinding:1.1.1",
+                compose_runtime           : "androidx.compose.runtime:runtime:$compose_version",
+                compose_livedata_state    : "androidx.compose.runtime:runtime-livedata:1.1.1",
+                compose_navigation        : "androidx.navigation:navigation-compose:$compose_nav_version",
+//compose test
+                "compose_ui_test_junit4"  : "androidx.compose.ui:ui-test-junit4:$compose_ui_version",
+                // compose debuging tools
+                "compose_ui_tooling"      : "androidx.compose.ui:ui-tooling:$compose_ui_version",
+                "compose_ui_test_manifest": "androidx.compose.ui:ui-test-manifest:$compose_ui_version",
+
+
+                firebase_storage        : "com.google.firebase:firebase-storage-ktx",
+                firebase_cloud_function : "com.google.firebase:firebase-functions-ktx",
+                firebase_storage        : "com.google.firebase:firebase-storage-ktx",
+                firebase_cloud_function : "com.google.firebase:firebase-functions-ktx",
+//playservices
+                play_services_auth        : "com.google.android.gms:play-services-auth:$play_services_auth",
+
+                google_services           : "com.google.gms:google-services:$google_services",
+
+                //room db
+
+
+//qrcode\
+                zxing                     : "com.journeyapps:zxing-android-embedded:$zxing",
+                mlkit_barcode             : "com.google.mlkit:barcode-scanning:$mlkit_barcode_scanning",
+                cameraX                   : "androidx.camera:camera-camera2:$camerax_version",
+                camera_lifecycle          : "androidx.camera:camera-lifecycle:$camerax_version",
+                camera_view               : "androidx.camera:camera-view:$camera_view",
+                multidex                  : "androidx.multidex:multidex:$multidex_version",
+
+                //rx
+                rxPermission              : "com.github.tbruyelle:rxpermissions:$rxPermission",
+                rxJava                    : "io.reactivex.rxjava3:rxjava:$rxJava",
+                rxAndroid                 : "io.reactivex.rxjava2:rxandroid:$rxAndroid",
+                //viewpager
+                circleIndicator           : "me.relex:circleindicator:$circleIndicator",
+
+
+//test
+                screengrab                : "tools.fastlane:screengrab$screengrab"
+
+        ]
+
+    }
+
+}
+
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.10' apply false
+}
